@@ -24,6 +24,21 @@ Mobile remote control APP integrated with a variety of AI functions; handle cont
 
 We provide 64 video tutorials and detailed documents. Whether you are a beginner or an experienced ROS player, you can easily use this robot.
 
+## Lesson Index
+
+1. [Intro](docs/vendor-lessons/01_intro/)
+2. [Assembly](docs/vendor-lessons/02_assembly/)
+3. [First Trial](docs/vendor-lessons/03_first_trial/)
+4. [Hardware Control](docs/vendor-lessons/04_hardware_control/)
+5. [Basic ROS](docs/vendor-lessons/05_basic_ros/)
+6. [OpenCV Visual](docs/vendor-lessons/06_opencv_visual/)
+7. [ROS Robot](docs/vendor-lessons/07_ros_robot/)
+8. [HD Camera](docs/vendor-lessons/08_hd_camera/)
+9. [Depth Camera](docs/vendor-lessons/09_depth_camera/)
+10. [Lidar](docs/vendor-lessons/10_lidar/)
+11. [MoveIt Arm](docs/vendor-lessons/11_moveit_arm/)
+12. [Multi Robot](docs/vendor-lessons/12_multi_robot/)
+
 # Required Best Buy Links
 [By on Yahboom website](https://category.yahboom.net/products/transbot-jetson_nano)
 
@@ -39,6 +54,3 @@ https://www.facebook.com/yahboomcar/
 ### Technical support email: 
 support@yahboom.com
 
-### Windows Software Tools
-You can download the Windows software tools at:
-http://www.yahboom.net/study/Transbot-jetson_nano
