@@ -1,0 +1,27 @@
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore PDF and other large binaries
+*.pdf
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+*.bin
+*.exe
+*.dll
+
+# Ignore temporary artifacts
+*.tmp
+*.log
+
+# Node modules or Python caches (in case)
+node_modules/
+__pycache__/
