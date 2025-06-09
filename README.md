@@ -56,8 +56,3 @@ https://www.facebook.com/yahboomcar/
 support@yahboom.com
 
 
-## vendor_libs
-Legacy communication libraries from the hardware vendor can be found in
-`vendor_libs/15.Communication protocol Python library/`. These files are
-archived for reference only because the ROS wrapper in this repository
-supersedes the old Python communication API.
