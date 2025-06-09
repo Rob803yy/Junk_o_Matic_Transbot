@@ -1,0 +1,62 @@
+name: ROS Noetic CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  build-test-lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup ROS
+        uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: noetic
+
+      - name: Prepare workspace
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-catkin-tools catkin-lint unzip
+          mkdir -p ~/ws/src
+          cp -r $GITHUB_WORKSPACE/* ~/ws/src/
+          cd ~/ws/src
+          find . -name '*.zip' -exec unzip -q {} -d . \;
+          # Move extracted rplidar package
+          if [ -d '14.About hardware/SLAM Lidar/rplidar_ros-master' ]; then
+            mv '14.About hardware/SLAM Lidar/rplidar_ros-master' rplidar_ros
+          fi
+          if [ -d '15.Communication protocol Python library/Python library/py_install' ]; then
+            mv '15.Communication protocol Python library/Python library/py_install' transbot_py
+          fi
+          rosdep update
+          rosdep install --from-paths . -i -y --rosdistro noetic || true
+
+      - name: Build
+        run: |
+          source /opt/ros/noetic/setup.bash
+          cd ~/ws
+          catkin_make
+
+      - name: Test
+        run: |
+          source /opt/ros/noetic/setup.bash
+          cd ~/ws
+          catkin_make run_tests
+          catkin_test_results
+
+      - name: Lint
+        run: |
+          cd ~/ws/src
+          catkin_lint || true
+
+      - name: Gazebo smoke test
+        run: |
+          sudo apt-get install -y gazebo11
+          source /opt/ros/noetic/setup.bash
+          timeout 15s gazebo --verbose -s libgazebo_ros_api_plugin &
+          PID=$!
+          sleep 5
+          kill $PID || true
