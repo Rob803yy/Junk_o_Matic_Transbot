@@ -47,12 +47,10 @@ If you have any problem when using our robot after checking the tutorial, please
 
 ### Facebook: 
 https://www.facebook.com/yahboomcar/ 
-  
 
 ### WhatsApp:
 +86 18682378128
 
 ### Technical support email: 
 support@yahboom.com
-
 
