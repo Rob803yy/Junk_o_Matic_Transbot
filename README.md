@@ -40,3 +40,14 @@ https://www.facebook.com/yahboomcar/
 ### Technical support email: 
 support@yahboom.com
 
+
+## Building the workspace
+
+This repository includes a minimal ROS catkin workspace located in `catkin_ws`.
+To build all packages run:
+
+```bash
+cd catkin_ws
+catkin_make
+source devel/setup.bash
+```
