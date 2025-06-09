@@ -32,7 +32,6 @@ If you have any problem when using our robot after checking the tutorial, please
 
 ### Facebook: 
 https://www.facebook.com/yahboomcar/ 
-  
 
 ### WhatsApp:
 +86 18682378128
@@ -40,3 +39,6 @@ https://www.facebook.com/yahboomcar/
 ### Technical support email: 
 support@yahboom.com
 
+### Windows Software Tools
+You can download the Windows software tools at:
+http://www.yahboom.net/study/Transbot-jetson_nano
