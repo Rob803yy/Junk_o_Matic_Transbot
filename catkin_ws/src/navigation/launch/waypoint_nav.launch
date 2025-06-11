@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find navigation)/launch/amcl_demo.launch"/>
+  <rosparam file="$(find navigation)/config/waypoints.yaml" command="load"/>
+  <node pkg="navigation" type="waypoint_nav.py" name="waypoint_nav" output="screen"/>
+</launch>
