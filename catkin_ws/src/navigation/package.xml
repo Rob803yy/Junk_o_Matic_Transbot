@@ -3,7 +3,14 @@
   <name>navigation</name>
   <version>0.0.0</version>
   <description>Placeholder package for navigation.</description>
-  <maintainer email="todo@example.com">TODO</maintainer>
-  <license>TODO</license>
-  <buildtool_depend>catkin</buildtool_depend>
+  <maintainer email="robert@example.com">Robert Yengo</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend version_eq="0.8.10">catkin</buildtool_depend>
+  <build_depend version_eq="1.15.11">roscpp</build_depend>
+  <build_depend version_eq="1.15.11">rospy</build_depend>
+  <build_depend version_eq="0.5.11">std_msgs</build_depend>
+  <exec_depend version_eq="1.15.11">roscpp</exec_depend>
+  <exec_depend version_eq="1.15.11">rospy</exec_depend>
+  <exec_depend version_eq="0.5.11">std_msgs</exec_depend>
 </package>
