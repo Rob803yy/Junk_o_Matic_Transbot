@@ -5,3 +5,8 @@ catkin_package()
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
+
+if(CATKIN_ENABLE_TESTING)
+  find_package(rostest REQUIRED)
+  add_rostest(test/test_basic.test)
+endif()
