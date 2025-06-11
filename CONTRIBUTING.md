@@ -24,3 +24,8 @@ If you need to add large binary assets, please use
 [Git LFS](https://git-lfs.github.com/) to store them. This keeps the repository
 size manageable.
 
+## Project Board
+The [project board](docs/project_board.md) lists open issues and labels such as
+`phase1`, `phase2`, `doc`, `infra`, and `good-first-issue`. Check the board to
+claim tasks or see what's planned for upcoming milestones.
+

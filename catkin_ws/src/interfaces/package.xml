@@ -5,5 +5,9 @@
   <description>Placeholder package for interfaces.</description>
   <maintainer email="todo@example.com">TODO</maintainer>
   <license>TODO</license>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
   <buildtool_depend>catkin</buildtool_depend>
 </package>
