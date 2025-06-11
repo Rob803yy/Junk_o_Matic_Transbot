@@ -1,0 +1,9 @@
+<launch>
+  <arg name="map" default="$(find navigation)/maps/mock_map.yaml"/>
+  <arg name="use_sim_time" default="true"/>
+  <param name="use_sim_time" value="$(arg use_sim_time)"/>
+
+  <node pkg="map_server" type="map_server" name="map_server" args="$(arg map)"/>
+  <node pkg="amcl" type="amcl" name="amcl"/>
+  <include file="$(find navigation)/launch/move_base.launch"/>
+</launch>
