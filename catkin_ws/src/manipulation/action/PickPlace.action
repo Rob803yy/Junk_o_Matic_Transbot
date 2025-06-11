@@ -1,0 +1,5 @@
+int32 bin_id
+---
+bool success
+---
+geometry_msgs/Pose grasp_pose
