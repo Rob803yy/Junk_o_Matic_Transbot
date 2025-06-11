@@ -10,3 +10,5 @@ Covers on-board hardware, embedded/edge software, cloud integration, safety, and
 - Autonomous Waste Management System Technical Report
 - Evaluation & Enhancement Strategy (Yahboom SE)
 - Review of Yahboom SE for Waste Mgmt
+
+For the week‑by‑week implementation roadmap, see [ARCHITECTURE.md](ARCHITECTURE.md).
