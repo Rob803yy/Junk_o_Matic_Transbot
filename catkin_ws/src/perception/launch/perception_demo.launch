@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="perception" type="dummy_classifier.py" name="dummy_classifier" output="screen"/>
+</launch>
